@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "no-var": "off",
+    "vars-on-top": "off",
+    "no-use-before-define" :"off",
+    "no-multi-spaces": "off",
+    "prefer-arrow-callback": "off",
+    "func-names" : "off",
+    "prefer-template": "off",
+    "camelcase":"off",
+    "object-shorthand": "off",
+    "prefer-destructuring": "off",
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "objects": "always-multiline",
+      "imports": "never",
+      "exports": "never",
+      "functions": "never"
+      }
+    ],
+    "key-spacing":"off"
+  }
+}
