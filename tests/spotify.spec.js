@@ -6,7 +6,7 @@ import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 import sinonStubPromise from 'sinon-stub-promise';
 
-import spotify from '../src/spotify';
+import spotify from '../src/Spotify';
 
 chai.use(sinonChai);
 chai.use(dirtyChai);
