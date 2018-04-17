@@ -8,7 +8,7 @@ function createMarkup(album) {
     </div>`;
 }
 
-export default function renderAlbums(data, element) {
+export default function renderAlbumInfo(data, element) {
   const markup = createMarkup(data);
 
   element.innerHTML = markup;
