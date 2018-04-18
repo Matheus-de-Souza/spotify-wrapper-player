@@ -12,7 +12,6 @@ const albumList   = document.getElementById('album-list');
 const albumInfo   = document.getElementById('album-info');
 const albumTracks = document.getElementById('album-tracks');
 
-debugger;
 albums.then(data => renderAlbums(data.albums.items, albumList));
 album
   .then(data => renderAlbumInfo(data, albumInfo))
