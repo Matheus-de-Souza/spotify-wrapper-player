@@ -42,19 +42,19 @@ describe('AlbumTracks', () => {
   }];
 
   const markup = `
-  <div class="music active" data-track-preview="https://p.scdn.co/mp3-preview/d45f58108a7d0e4e93ef3f5fcedd551ff77384fd?cid=774b29d4f13844c495f206cafdad9c86">
+  <div class="music" data-track-preview="https://p.scdn.co/mp3-preview/d45f58108a7d0e4e93ef3f5fcedd551ff77384fd?cid=774b29d4f13844c495f206cafdad9c86">
     <p class="music-number">1</p>
     <p class="music-title">In Control</p>
     <p class="music-duration">278480</p>
   </div>`;
 
   const markup2 = `
-  <div class="music active" data-track-preview="https://p.scdn.co/mp3-preview/d45f58108a7d0e4e93ef3f5fcedd551ff77384fd?cid=774b29d4f13844c495f206cafdad9c86">
+  <div class="music" data-track-preview="https://p.scdn.co/mp3-preview/d45f58108a7d0e4e93ef3f5fcedd551ff77384fd?cid=774b29d4f13844c495f206cafdad9c86">
     <p class="music-number">1</p>
     <p class="music-title">In Control</p>
     <p class="music-duration">278480</p>
   </div>
-  <div class="music active" data-track-preview="https://p.scdn.co/mp3-preview/f9f259f5db6e8e9facac255e0010492508f5ca0b?cid=774b29d4f13844c495f206cafdad9c86">
+  <div class="music" data-track-preview="https://p.scdn.co/mp3-preview/f9f259f5db6e8e9facac255e0010492508f5ca0b?cid=774b29d4f13844c495f206cafdad9c86">
     <p class="music-number">2</p>
     <p class="music-title">Daydream</p>
     <p class="music-duration">270973</p>
