@@ -7,7 +7,11 @@ describe('ConvertToHumanTime', () => {
     expect(convertToHumanTime(0)).to.be.equal('0:00');
   });
 
-  it('should receive 1000ms and convert to 0:30', () => {
+  it('should receive 1000ms and convert to 0:01', () => {
+    expect(convertToHumanTime(1000)).to.be.equal('0:01');
+  });
+
+  it('should receive 1111ms and convert to 0:01', () => {
     expect(convertToHumanTime(1000)).to.be.equal('0:01');
   });
 
@@ -25,5 +29,9 @@ describe('ConvertToHumanTime', () => {
 
   it('should receive 120000ms and convert to 2:00', () => {
     expect(convertToHumanTime(120000)).to.be.equal('2:00');
+  });
+
+  it('should receive 278480ms and convert to 4:38', () => {
+    expect(convertToHumanTime(278480)).to.be.equal('4:38');
   });
 });
