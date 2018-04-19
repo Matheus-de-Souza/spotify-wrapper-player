@@ -33,73 +33,6 @@ describe('AlbumList', () => {
           "uri": "spotify:artist:2plmfvGgldxCpZF0vLt3o4"
         }
       ],
-      "available_markets": [
-        "AD",
-        "AR",
-        "AT",
-        "AU",
-        "BE",
-        "BG",
-        "BO",
-        "BR",
-        "CA",
-        "CH",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DE",
-        "DK",
-        "DO",
-        "EC",
-        "EE",
-        "ES",
-        "FI",
-        "FR",
-        "GB",
-        "GR",
-        "GT",
-        "HK",
-        "HN",
-        "HU",
-        "ID",
-        "IE",
-        "IL",
-        "IS",
-        "IT",
-        "JP",
-        "LI",
-        "LT",
-        "LU",
-        "LV",
-        "MC",
-        "MT",
-        "MX",
-        "MY",
-        "NI",
-        "NL",
-        "NO",
-        "NZ",
-        "PA",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "PY",
-        "RO",
-        "SE",
-        "SG",
-        "SK",
-        "SV",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "UY",
-        "VN",
-        "ZA"
-      ],
       "external_urls": {
         "spotify": "https://open.spotify.com/album/5PC4gp98bK7pCofmu84tXk"
       },
@@ -145,73 +78,6 @@ describe('AlbumList', () => {
           "uri": "spotify:artist:2plmfvGgldxCpZF0vLt3o4"
         }
       ],
-      "available_markets": [
-        "AD",
-        "AR",
-        "AT",
-        "AU",
-        "BE",
-        "BG",
-        "BO",
-        "BR",
-        "CA",
-        "CH",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DE",
-        "DK",
-        "DO",
-        "EC",
-        "EE",
-        "ES",
-        "FI",
-        "FR",
-        "GB",
-        "GR",
-        "GT",
-        "HK",
-        "HN",
-        "HU",
-        "ID",
-        "IE",
-        "IL",
-        "IS",
-        "IT",
-        "JP",
-        "LI",
-        "LT",
-        "LU",
-        "LV",
-        "MC",
-        "MT",
-        "MX",
-        "MY",
-        "NI",
-        "NL",
-        "NO",
-        "NZ",
-        "PA",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "PY",
-        "RO",
-        "SE",
-        "SG",
-        "SK",
-        "SV",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "UY",
-        "VN",
-        "ZA"
-      ],
       "external_urls": {
         "spotify": "https://open.spotify.com/album/5PC4gp98bK7pCofmu84tXk"
       },
@@ -254,73 +120,6 @@ describe('AlbumList', () => {
           "uri": "spotify:artist:2plmfvGgldxCpZF0vLt3o4"
         }
       ],
-      "available_markets": [
-        "AD",
-        "AR",
-        "AT",
-        "AU",
-        "BE",
-        "BG",
-        "BO",
-        "BR",
-        "CA",
-        "CH",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DE",
-        "DK",
-        "DO",
-        "EC",
-        "EE",
-        "ES",
-        "FI",
-        "FR",
-        "GB",
-        "GR",
-        "GT",
-        "HK",
-        "HN",
-        "HU",
-        "ID",
-        "IE",
-        "IL",
-        "IS",
-        "IT",
-        "JP",
-        "LI",
-        "LT",
-        "LU",
-        "LV",
-        "MC",
-        "MT",
-        "MX",
-        "MY",
-        "NI",
-        "NL",
-        "NO",
-        "NZ",
-        "PA",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "PY",
-        "RO",
-        "SE",
-        "SG",
-        "SK",
-        "SV",
-        "TH",
-        "TR",
-        "TW",
-        "US",
-        "UY",
-        "VN",
-        "ZA"
-      ],
       "external_urls": {
         "spotify": "https://open.spotify.com/album/4jWODAwLL6Lf4hnthcc0D9"
       },
@@ -352,27 +151,27 @@ describe('AlbumList', () => {
   ];
 
   const markup = `
-    <div class="list-item">
-      <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-image">
-      <div class="list-description">
-        <p class="list-title">${data[0].name}</p>
-        <p class="list-subtitle">${data[0].artists[0].name}</p>
+    <div class="list-item" data-album-id="${data[0].id}">
+      <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-image" data-album-id="${data[0].id}">
+      <div class="list-description" data-album-id="${data[0].id}">
+        <p class="list-title" data-album-id="${data[0].id}">${data[0].name}</p>
+        <p class="list-subtitle" data-album-id="${data[0].id}">${data[0].artists[0].name}</p>
       </div>
     </div>`;
 
   const markup2 = `
-    <div class="list-item">
-      <img src="${data2[0].images[2].url}" alt="${data2[0].name}" class="list-image">
-      <div class="list-description">
-        <p class="list-title">${data2[0].name}</p>
-        <p class="list-subtitle">${data2[0].artists[0].name}</p>
+    <div class="list-item" data-album-id="${data2[0].id}">
+      <img src="${data2[0].images[2].url}" alt="${data2[0].name}" class="list-image" data-album-id="${data2[0].id}">
+      <div class="list-description" data-album-id="${data2[0].id}">
+        <p class="list-title" data-album-id="${data2[0].id}">${data2[0].name}</p>
+        <p class="list-subtitle" data-album-id="${data2[0].id}">${data2[0].artists[0].name}</p>
       </div>
     </div>
-    <div class="list-item">
-      <img src="${data2[1].images[2].url}" alt="${data2[1].name}" class="list-image">
-      <div class="list-description">
-        <p class="list-title">${data2[1].name}</p>
-        <p class="list-subtitle">${data2[1].artists[0].name}</p>
+    <div class="list-item" data-album-id="${data2[1].id}">
+      <img src="${data2[1].images[2].url}" alt="${data2[1].name}" class="list-image" data-album-id="${data2[1].id}">
+      <div class="list-description" data-album-id="${data2[1].id}">
+        <p class="list-title" data-album-id="${data2[1].id}">${data2[1].name}</p>
+        <p class="list-subtitle" data-album-id="${data2[1].id}">${data2[1].artists[0].name}</p>
       </div>
     </div>`;
 
